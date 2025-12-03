@@ -1,0 +1,61 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e7e34;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:0.08" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sugarcane stalks -->
+  <g id="sugarcane-stalk-1">
+    <!-- Main stalk -->
+    <line x1="50" y1="380" x2="55" y2="50" stroke="#16a34a" stroke-width="8" stroke-linecap="round"/>
+    <!-- Leaves -->
+    <path d="M 55 100 Q 80 95 85 110" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 55 130 Q 30 125 20 145" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 55 160 Q 85 155 95 175" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 55 190 Q 25 185 15 205" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 55 220 Q 80 215 90 235" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 55 250 Q 30 245 20 265" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 55 280 Q 85 275 95 295" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <g id="sugarcane-stalk-2">
+    <!-- Main stalk -->
+    <line x1="150" y1="380" x2="155" y2="40" stroke="#15803d" stroke-width="8" stroke-linecap="round"/>
+    <!-- Leaves -->
+    <path d="M 155 100 Q 180 95 190 115" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 155 135 Q 130 130 120 150" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 155 170 Q 185 165 200 185" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 155 205 Q 125 200 115 220" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 155 240 Q 185 235 200 255" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 155 275 Q 130 270 120 290" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <g id="sugarcane-stalk-3">
+    <!-- Main stalk -->
+    <line x1="250" y1="380" x2="245" y2="60" stroke="#16a34a" stroke-width="8" stroke-linecap="round"/>
+    <!-- Leaves -->
+    <path d="M 245 110 Q 270 105 285 125" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 245 145 Q 220 140 210 160" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 245 180 Q 275 175 290 195" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 245 215 Q 215 210 205 230" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 245 250 Q 275 245 290 265" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 245 285 Q 220 280 210 300" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <g id="sugarcane-stalk-4">
+    <!-- Main stalk -->
+    <line x1="340" y1="380" x2="340" y2="70" stroke="#15803d" stroke-width="8" stroke-linecap="round"/>
+    <!-- Leaves -->
+    <path d="M 340 120 Q 365 115 375 135" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 340 155 Q 315 150 305 170" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 340 190 Q 365 185 375 205" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 340 225 Q 315 220 305 240" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 340 260 Q 365 255 375 275" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Ground -->
+  <rect x="0" y="350" width="400" height="50" fill="#92400e" opacity="0.1"/>
+</svg>

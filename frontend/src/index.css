@@ -1,0 +1,32 @@
+:root{
+  --base-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --bg: #e9f1f2; /* a little darker base */
+  --surface: #fbfaf7; /* softer off-white to reduce stark white */
+  --surface-2: #f6f8f7; /* slightly tinted inputs */
+  --accent: #2b9ea3;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html, body {height:100%}
+
+body{
+  font-family: var(--base-font);
+  line-height:1.6;
+  min-width:320px;
+  min-height:100vh;
+  color:var(--text);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%);
+}
+
+h1{font-size:2.6em;line-height:1.1}
+
+button{border-radius:8px;border:1px solid transparent;padding:0.55em 1em;font-size:1em;font-weight:500;font-family:inherit;background-color:#111827;cursor:pointer;transition:all .18s}
+button:hover{opacity:0.95}
+button:focus{outline:4px auto -webkit-focus-ring-color}
+
+@media (prefers-color-scheme: light){
+  :root{background-color:#ffffff}
+}
