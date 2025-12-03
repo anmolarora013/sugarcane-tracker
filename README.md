@@ -47,13 +47,20 @@ This application helps track sugarcane *purchies*, maintain multiple accounts, a
 # 🏗️ Full System Architecture
 
 ```mermaid
-flowchart TD
+flowchart LR
+  Browser["User Browser (React + Vite)"]
+  CloudFront["CloudFront (optional)"]
+  S3["S3 Static Hosting (dist)"]
+  API["API Gateway"]
+  Lambda["AWS Lambda Functions"]
+  Purchies["DynamoDB - Purchies Table"]
+  Accounts["DynamoDB - Accounts Table"]
 
-A[React Frontend (Vite)] --> B[S3 Static Hosting]
-B --> C[API Gateway]
-C --> D[AWS Lambda Functions]
-D --> E[(DynamoDB - Purchies Table)]
-D --> F[(DynamoDB - Accounts Table)]
+  Browser -->|"Static Assets"| CloudFront --> S3
+  Browser -->|"REST API Calls"| API
+  API -->|"Invoke"| Lambda
+  Lambda -->|"Reads/Writes"| Purchies
+  Lambda -->|"Reads/Writes"| Accounts
 ```
 
 ---
@@ -85,12 +92,12 @@ D --> F[(DynamoDB - Accounts Table)]
 # 🗄️ Database Schema
 
 ## 📘 Accounts Table  
-| Field        | Type   | Description |
-|--------------|--------|-------------|
-| account_id   | PK     | Unique ID |
-| account_name | string | Display Name |
-| description  | string | Optional |
-| created_at   | string | ISO Timestamp |
+| Field        | Type    | Description   |
+|--------------|---------|---------------|
+| account_id   | PK      | Unique ID     |
+| account_name | string  | Display Name  |
+| is_actvive   | boolean | Optional      |
+| created_at   | string  | ISO Timestamp |
 
 ---
 
@@ -108,7 +115,6 @@ D --> F[(DynamoDB - Accounts Table)]
 | purchy_id    | string    | Purchy number |
 | note         | string    | Optional |
 | rate         | number    | Optional |
-| amount       | number    | Calculated |
 
 ---
 
